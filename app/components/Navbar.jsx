@@ -8,7 +8,7 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-  const currentUser = { displayName: "felix franko" };
+  const currentUser = { displayName: "Ghost Rider" };
   console.log(currentUser);
   return (
     <>
