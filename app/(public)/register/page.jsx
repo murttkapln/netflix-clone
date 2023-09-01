@@ -17,8 +17,7 @@ const Register = () => {
   //   password: "",
   // });
 
-  const createUser = useContext(AuthContext);
-  const signUpProvider = useContext(AuthContext);
+  const { createUser, signUpProvider } = useContext(AuthContext);
 
   // const { email, password, firstName, lastName } = info;
 
