@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const MovieDetail = ({params}) => {
+const MovieDetail = ({ params }) => {
   console.log(params);
-  return (
-    <div>MovieDetail</div>
-  )
-}
+  return <div>MovieDetail</div>;
+};
 
-export default MovieDetail
+export default MovieDetail;
