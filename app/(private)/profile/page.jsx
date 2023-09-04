@@ -8,8 +8,8 @@ const Profile = () => {
   return (
     <div className="flex items-center justify-center mt-20">
       <div className="flex flex-col">
-        <h1 className="text-xl font-bold">Who&#39;s Watching?</h1>
-        <CardContainer/>
+        <h1>Who&#39;s watching?</h1>
+        <CardContainer />
       </div>
     </div>
   );

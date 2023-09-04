@@ -26,7 +26,8 @@ export const useAuthContext = () => {
 
 const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
+
   useEffect(() => {
     userObserver();
   }, []);
@@ -43,7 +44,7 @@ const AuthContextProvider = ({ children }) => {
       await updateProfile(auth.currentUser, {
         displayName: displayName,
       });
-      router.push("/profile")
+      router.push("/profile");
       // router.back()
       // router.forward()
       toastSuccessNotify("Registered successfully!");
@@ -65,7 +66,7 @@ const AuthContextProvider = ({ children }) => {
         password
       );
       toastSuccessNotify("Logged in successfully!");
-      router.push("/profile")
+      router.push("/profile");
       console.log(userCredential);
     } catch (err) {
       toastErrorNotify(err.message);
@@ -74,7 +75,6 @@ const AuthContextProvider = ({ children }) => {
 
   const logOut = () => {
     signOut(auth);
-    router.push("/")
     toastSuccessNotify("Logged out successfully!");
   };
 
@@ -109,7 +109,7 @@ const AuthContextProvider = ({ children }) => {
       .then((result) => {
         console.log(result);
         toastSuccessNotify("Logged in successfully!");
-        router.push("/profile")
+        router.push("/profile");
       })
       .catch((error) => {
         // Handle Errors here.

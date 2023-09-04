@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <AuthContextProvider>
           <Navbar />
           {children}
-          <ToastContainer/>
+          <ToastContainer />
         </AuthContextProvider>
       </body>
     </html>
